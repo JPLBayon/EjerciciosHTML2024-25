@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sistema de reserva de habitaciones</title>
+	<meta charset="utf-8"  />
+    <style type="text/css">
+        h1 {color: blue;}
+        label {color: green;}
+        div {border: 1px solid black; padding: 1.5em; margin-left: 10em;
+             background-color: bisque;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/FormReserva.css" />
+</head>
+
+<body>
+    <h1>Sistema de reserva de habitaciones</h1>
+    <form action="FormReserva.html" method="get">
+        <div>
+        <label for="nombre">Introduzca su nombre:</label>
+        <input type="text" id="nombre" name="nombre" required/>
+        <br />
+        <label for="nif">Introduzca su NIF:</label>
+        <input type="text" pattern="\d{7,8}[a-zA-Z]" id="nif" name="nif" required>
+        </div>    
+        
+        Tipo de habitación:<br />
+        <input type="radio" name="habitacion" id="ind" value="1" checked />
+        <label for="individual">Individual</label>
+        <br />
+        <input type="radio" name="habitacion" id="mat" value="2" />
+        <label for="matrimonio">Matrimonio</label>
+        <br />
+        Opciones:
+        <br />
+        <input type="checkbox" id="des" name="des" />
+        <label for="des">Desayuno</label>
+        <br />
+        <input type="checkbox" id="jak" name="jak" />
+        <label for="jack">Jakuzzi</label>
+        <br />
+        <input type="checkbox" id="cli" name="cli">
+        <label for="cli">Climatizador</label>
+        <br />
+        Forma de pago:
+        <br />
+        <input type="radio" id="efe" name="pago" value="1" checked />
+        <label for="efe">Efectivo</label>
+        <br />
+        <input type="radio" id="che" name="pago" value="2"/>
+        <label for="che">Cheque</label>
+        <br />
+        <input type="radio" id="tar" name="pago" value="3" />
+        <label for="tar">Tarjeta de credito</label>
+        <br />
+        Enviar factura a empresa:
+        <br />
+        <input type="radio" id="si" name="factura" value="s" checked />
+        <label for="si">si</label>
+        <br />
+        <input type="radio" id="no" name="factura" value="n" />
+        <label for="no">no</label>
+        <br />
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+    </body>
+</html>
