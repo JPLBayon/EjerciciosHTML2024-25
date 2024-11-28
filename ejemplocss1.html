@@ -7,11 +7,33 @@
     <style type="text/css">
         p span {color: red;}
         p strong span {color: green;}
+        .azul {font-size: 3em;}
+        em.azul {color: blue;}
+        p dfn.azul, h2 {color: bisque; }
+        #id1 {font-size: 6em; }
+        
     </style>
 </head>
 
 <body>
-    <h1>Neque porro quisquam est qui <span>dolorem ipsum</span> quia dolor sit amet, consectetur, adipisci velit...</h1>
+    <h1>Neque <dfn class="azul">porro</dfn> quisquam est qui <span>dolorem ipsum</span> quia dolor sit amet, consectetur, adipisci velit...</h1>
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar ullamcorper nunc at elementum. Donec in elementum nunc. <span>Quisque pretium aliquet dictum</span>. <em>Maecenas eu congue quam. Maecenas eget facilisis odio. <strong>Vestibulum varius <span>lectus</span> mauris</strong>, a tincidunt elit consequat sed. Sed iaculis tempus ante ut finibus.</em> Pellentesque aliquet suscipit nulla, non accumsan sapien tempus nec. Pellentesque ante est, tincidunt in odio vel, elementum cursus lectus. Morbi consectetur sem nec purus congue, tristique ultrices diam imperdiet. Ut in augue porta lacus mollis mattis ac id diam.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar ullamcorper nunc at elementum. Donec in elementum nunc.
+        <span id="id1">
+            Quisque pretium aliquet dictum
+        </span>. 
+        <em class="azul">Maecenas eu congue quam. Maecenas eget facilisis odio. 
+            <strong>
+                Vestibulum varius 
+                <span>lectus</span> 
+                mauris
+            </strong>
+            , a tincidunt elit consequat sed. Sed iaculis tempus ante ut finibus.
+        </em> 
+        <dfn class="azul" title="">
+            Pellentesque aliquet suscipit nulla, non accumsan sapien tempus nec. Pellentesque ante est, tincidunt in odio vel, elementum cursus lectus. Morbi consectetur sem nec purus congue, tristique ultrices diam imperdiet. Ut in augue porta lacus mollis mattis ac id diam.
+        </dfn>
+    </p>
 </body>
+</html>
