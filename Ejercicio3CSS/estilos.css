@@ -1,0 +1,49 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos, ya que son imprescindibles para
+   que la página se vea correctamente.
+   ================================================================== */
+
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+header, nav, aside, main, main #principal, main #secundario, footer {
+  border: 2px solid #777;
+}
+
+header { clear: both; }
+nav { clear: both; }
+aside { float: left; width: 20%; }
+main { float: right; width: 78%; }
+main #principal { float: left; width: 78%; }
+main #secundario { float: right; width: 20%; }
+footer { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+header #logo { float: left; }
+header #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+nav ul#menu_principal li { display: inline; float: left; }
+
+/*-- Sección Principal -----------------------------------------------*/
+main section article img { width: 100px; float: left; }
+
+/*-- Pie de página ---------------------------------------------------*/
+footer .enlaces   { float: left; }
+footer .copyright { float: right; }
+
+/* === IMPORTANTE ===================================================
+   A partir de aquí, se pueden añadir todos los estilos propios que 
+   sean necesarios.
+   ================================================================== */
