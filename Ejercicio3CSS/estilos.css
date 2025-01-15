@@ -21,10 +21,10 @@ header, nav, aside, main, main #principal, main #secundario, footer {
   border: 2px solid #777;
 }
 
-header { clear: both; }
-nav { clear: both; }
-aside { float: left; width: 20%; }
-main { float: right; width: 78%; }
+header { clear: both; padding: 1em;}
+nav { clear: both; padding: .5em; margin-bottom: .5em; }
+div#aside { float: left; width: 20%; }
+div#main { float: right; width: 80%; }
 main #principal { float: left; width: 78%; }
 main #secundario { float: right; width: 20%; }
 footer { clear: both; }
@@ -47,3 +47,9 @@ footer .copyright { float: right; }
    A partir de aquí, se pueden añadir todos los estilos propios que 
    sean necesarios.
    ================================================================== */
+
+#noticias, #publicidad, main, #secundario { padding: .5em; }
+footer {padding-top: .5em; padding-top: .5em; margin-top: 1em}
+article {margin-bottom: 1em;}
+article img {margin: .5em;}
+#publicidad {margin-top: 1em;}

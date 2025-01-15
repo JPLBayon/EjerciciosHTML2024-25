@@ -1,0 +1,7 @@
+aside, article {float: left;}
+aside {width: 30%;}
+article {width: 70%;}
+aside div {margin: 1em; }
+div.article {border: 1px solid blue; padding: .5em;}
+aside div img {width: 70%; margin: auto;}
+footer table {margin: 1em; width: 100%; text-align: center;}
