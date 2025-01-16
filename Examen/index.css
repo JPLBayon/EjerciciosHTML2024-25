@@ -1,7 +1,10 @@
+header h1 {text-align: center; background-color: lightgray; }
 aside, article {float: left;}
 aside {width: 30%;}
 article {width: 70%;}
 aside div {margin: 1em; }
 div.article {border: 1px solid blue; padding: .5em;}
 aside div img {width: 70%; margin: auto;}
-footer table {margin: 1em; width: 100%; text-align: center;}
+footer div.footer {float: left; width: 33.3%; text-align: center;}
+footer div.footerint { border: 3px solid black; background-color: lightgray; margin: 1em; }
+footer table { width: 100%; }
